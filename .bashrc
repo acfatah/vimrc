@@ -1,3 +1,6 @@
-# Set bash visual input to use vim editor
-# I.e, 'set -o vi'
+# Use vim as default text editor
 export VISUAL=vim
+
+# Specifically for git
+export EDITOR=$VISUAL
+export GIT_EDITOR=$VISUAL
