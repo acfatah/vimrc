@@ -2,6 +2,16 @@
 
 Shared or common vim configurations across development or production machines.
 
+## One Click Copy
+
+```bash
+[ ! -e ~/.inputrc ] && \
+  curl -s https://raw.githubusercontent.com/acfatah/vimrc/main/.inputrc > ~/.inputrc || \
+  echo '.inputrc file already exists!' >&2; \
+[ ! -e ~/.vimrc ] && \
+  curl -s https://raw.githubusercontent.com/acfatah/vimrc/main/.vimrc > ~/.vimrc || \
+  echo '.vimrc file already exists!' >&2
+```
 
 ## Using Plugins
 
