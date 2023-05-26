@@ -6,10 +6,10 @@ Shared or common vim configurations across development or production machines.
 
 ```bash
 [ ! -e ~/.inputrc ] && \
-  curl -s https://raw.githubusercontent.com/acfatah/vimrc/main/.inputrc > ~/.inputrc || \
+  curl -sL https://raw.githubusercontent.com/acfatah/vimrc/main/.inputrc > ~/.inputrc || \
   echo '.inputrc file already exists!' >&2; \
 [ ! -e ~/.vimrc ] && \
-  curl -s https://raw.githubusercontent.com/acfatah/vimrc/main/.vimrc > ~/.vimrc || \
+  curl -sL https://raw.githubusercontent.com/acfatah/vimrc/main/.vimrc > ~/.vimrc || \
   echo '.vimrc file already exists!' >&2
 ```
 
